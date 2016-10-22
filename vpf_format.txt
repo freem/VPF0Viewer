@@ -9,13 +9,13 @@ incomplete VPF0 format documentation
 0x10-0x1F: ???
 
 8bpp images
-0x0020-0x041F: palette table (256 colors?)
+0x0020-0x041F: palette table (typically 256 colors at 4 channels per color)
 0x0420: data begins
 
 24bpp images
 0x0020: data begins
 
-in cd800.vpf (which is at 0x000CD800 in FPR.ROM):
+8bpp format example image header (at 0x000CD800 in USA version of FPR.ROM):
 VPF0
 0x00,0x60,0x04,0x00 = 0x00046000 = 286720 = image data length (without palette table)
 0x1300 = 0x0013 = 19??
@@ -23,7 +23,7 @@ VPF0
 0xC001 = 0x01C0 = 448px tall
 0x0800 = 8bpp
 
-24bpp format
+24bpp format example image header (at 0x0011B080 in USA version of FPR.ROM):
 VPF0
 0x00,0x03,0x00,0x00 = 0x00000300 = 768 = image data length (without 0x20 byte header)
 0x0100 = 0x0001 = 1?
