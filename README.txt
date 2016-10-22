@@ -41,6 +41,32 @@ Exit - Get out of here!
 Only contains the About dialog.
 
 ================================================================================
+Changelog
+================================================================================
+legend:
+! bugfix
++ addition
+* notice/neutral
+- removal
+~ internal thing
+
+v0.0.2 - (in development)
+! Fixed bug when trying to save a PNG without loading a file.
++ Added support for 24bpp VPF0 images.
++ Allow for dragging and dropping files onto the window.
++ Added the filename to the title bar after opening a file.
++ Added a statusbar, which also notes the open file and its BPP mode.
+
+v0.0.1 - 2016/10/22
+* Initial release, proof of concept.
+
+================================================================================
+Planned Features
+================================================================================
+* 24bpp support
+* PNG -> VPF0 conversion???
+
+================================================================================
 License
 ================================================================================
 This program is released under the MIT license.
