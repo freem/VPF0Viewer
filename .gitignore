@@ -1,0 +1,9 @@
+# visual studio user files
+*.suo
+*.user
+
+# object files
+VPF0toPNG/obj/*
+
+# binaries
+VPF0toPNG/bin/*
