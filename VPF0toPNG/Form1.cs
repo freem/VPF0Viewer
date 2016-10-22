@@ -124,7 +124,7 @@ namespace VPF0toPNG
 			statusBarLabel.Text = String.Format("{0} | {1}bpp", originalFilename,imageBPP);
 
 			/* resize window automatically for bigger images */
-			if (imageWidth > this.Size.Width && imageHeight > this.Size.Height) {
+			if (imageWidth > this.Size.Width-32 || imageHeight > this.Size.Height-96) {
 				this.Size = new Size(imageWidth+32,imageHeight+96);
 			}
 
@@ -142,7 +142,7 @@ namespace VPF0toPNG
 			for (int i = 0; i < 256; i++) {
 				tempData = _br.ReadBytes(4);
 				/* multiply alpha by 2; assumption that may not be true... */
-				tempData[3] = (byte)Math.Min((int)(tempData[3] * 2)+1, 255);
+				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
 				imagePalette[i] = Color.FromArgb(tempData[3],tempData[0],tempData[1],tempData[2]);
 			}
 		}

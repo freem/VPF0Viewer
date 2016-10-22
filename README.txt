@@ -11,6 +11,7 @@ FPR.ROM file, as well as export the images to PNG.
 This version is WIP for various reasons, including, but not limited to:
 * not knowing what all the bytes of the VPF0 format do
 * not having a good way to extract VPF0 files from FPR.ROM
+* certain images have odd colors; this is especially notable in 8bpp images.
 
 ================================================================================
 Usage
