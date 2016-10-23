@@ -92,9 +92,18 @@ namespace VPF0toPNG
 			/* get color depth */
 			imageBPP = br.ReadInt16();
 
-			if (imageBPP == 8) {
+			/* todo: apparently VPF0 supports 4bpp, 8bpp, and 24bpp */
+			if (imageBPP == 4){
+				MessageBox.Show("4BPP reading is horribly broken", "Error opening 4BPP format file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+				/*
+				ReadPalette_4BPP(vpf0File, br);
+				vpf0File.Seek(0x60, SeekOrigin.Begin);
+				*/
+			}
+			else if (imageBPP == 8) {
 				/* do the palette evolution*/
-				ReadPalette(vpf0File, br);
+				ReadPalette_8BPP(vpf0File, br);
 				vpf0File.Seek(0x0420, SeekOrigin.Begin); // xxx: assumption based on 8bpp files having 256 palette entries
 			}
 			else {
@@ -111,11 +120,12 @@ namespace VPF0toPNG
 			vpf0File.Close();
 
 			/* do conversion of imageData to bitmap data */
-			if (imageBPP == 8) {
-				ImageToBitmap_8BPP();
+			if (imageBPP == 24) {
+				ImageToBitmap_24BPP();
 			}
 			else {
-				ImageToBitmap_24BPP();
+				// 4bpp and 8bpp share similar techniques?
+				ImageToBitmap_8BPP();
 			}
 
 			/* throw the open filename in titlebar */
@@ -133,10 +143,25 @@ namespace VPF0toPNG
 		}
 
 		/*
-		 * ReadPalette(FileStream, BinaryReader) 
+		 * ReadPalette_4BPP(FileStream, BinaryReader)
+		 * Reads the palette in for a 4bpp image. Assumes 16 colors in the palette.
+		 */
+		private void ReadPalette_4BPP(FileStream _fs, BinaryReader _br){
+			_fs.Seek(0x20, SeekOrigin.Begin);
+			byte[] tempData = new byte[4];
+			for (int i = 0; i < 16; i++) {
+				tempData = _br.ReadBytes(4);
+				/* multiply alpha by 2; assumption that may not be true... */
+				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
+				imagePalette[i] = Color.FromArgb(tempData[3],tempData[0],tempData[1],tempData[2]);
+			}
+		}
+
+		/*
+		 * ReadPalette_8BPP(FileStream, BinaryReader) 
 		 * Reads the palette in for an 8bpp image. Assumes a full 256 colors in the palette table.
 		 */
-		private void ReadPalette(FileStream _fs, BinaryReader _br) {
+		private void ReadPalette_8BPP(FileStream _fs, BinaryReader _br) {
 			_fs.Seek(0x20, SeekOrigin.Begin);
 			byte[] tempData = new byte[4];
 			for (int i = 0; i < 256; i++) {
