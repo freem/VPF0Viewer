@@ -1,0 +1,493 @@
+VPF0 locations in FPR.ROM (USA version)
+
+this list is incomplete, but primarily because I don't want to go through
+a bunch of turnbuckle entries.
+
+0x000CD800 | agetec logo
+0x001156C0 | smoke
+0x00116C40 | light beams
+0x00118680 | small circle
+0x00118E00 | fire
+0x0011B080 | small orange ball (24bpp, unlike most VPF0 textures)
+0x0011CBC0 | sparks?
+0x0011E800 | [AIKOH/CD_ROM.VPF?] "Now Loading" items
+0x001AE800 | spike logo
+0x1F8DB9C0 | gray texture
+0x1F8DFE00 | smaller gray texture
+0x1F8E1240 | gray mat texture?
+0x1F8E3680 | blue mat texture 1? (lighter)
+0x1F8E7AC0 | gray/black guardrail textures
+0x1F8F8680 | crowd textures 1  (anim. frame 1)
+0x1F908AC0 | crowd textures 2  (anim. frame 1)
+0x1F918F40 | crowd textures 3  (anim. frame 2)
+0x1F929380 | crowd textures 4  (anim. frame 2)
+0x1F939800 | crowd textures 5  (anim. frame 3)
+0x1F949C40 | crowd textures 6  (anim. frame 3)
+0x1F95A0C0 | crowd textures 7  (anim. frame 4)
+0x1F96A500 | crowd textures 8  (anim. frame 4)
+0x1F97A980 | crowd textures 9  (anim. frame 5)
+0x1F98ADC0 | crowd textures 10 (anim. frame 5)
+0x1F99D4C0 | transparent black
+0x1F9ADDC0 | green stone texture?
+0x1F9B2200 | blue mat texture 2? (darker)
+0x1F9B6640 | blue guardrail texture 1 (tall)
+0x1F9C76C0 | crowd textures 11 (anim. frame 1)
+0x1F9D7B00 | crowd textures 12 (anim. frame 1)
+0x1F9E7F80 | crowd textures 13 (anim. frame 2)
+0x1F9F83C0 | crowd textures 14 (anim. frame 2)
+0x1FA08840 | crowd textures 15 (anim. frame 3)
+0x1FA18C80 | crowd textures 16 (anim. frame 3)
+0x1FA29100 | crowd textures 17 (anim. frame 4)
+0x1FA39540 | crowd textures 18 (anim. frame 4)
+0x1FA499C0 | crowd textures 19 (anim. frame 5)
+0x1FA59E00 | crowd textures 20 (anim. frame 5)
+0x1FA6EA40 | transparent black
+0x1FA80040 | parquet wood floor texture
+0x1FA84480 | blue mat texture 3? (darker fade on top)
+0x1FA888C0 | blue guardrail texture 2 (wide)
+0x1FA99940 | crowd textures 21
+0x1FAA9D80 | (probably crowd textures 22 (anim. frame 1))
+0x1FABA200 | (probably crowd textures 23 (anim. frame 2))
+0x1FACA640 | (probably crowd textures 24 (anim. frame 2))
+0x1FADAAC0 | (probably crowd textures 25 (anim. frame 3))
+0x1FAEAF00 | (probably crowd textures 26 (anim. frame 3))
+0x1FAFB380 | (probably crowd textures 27 (anim. frame 4))
+0x1FB0B7C0 | (probably crowd textures 28 (anim. frame 4))
+0x1FB1BC40 | (probably crowd textures 29 (anim. frame 5))
+0x1FB2C080 | (probably crowd textures 30 (anim. frame 5))
+0x1FB3FE00 | transparent black
+0x1FB5B400 | planks wood floor texture 1 (horizontal)
+0x1FB5F840 | yellowish texture?
+0x1FB60480 | blue splash texture
+0x1FB648C0 | gym texture (clock, basketball hoop, etc.)
+0x1FB6A500 | crowd textures 31
+0x1FB7A940 | (probably crowd textures 32 (anim. frame 1))
+0x1FB8ADC0 | (probably crowd textures 33 (anim. frame 2))
+0x1FB9B200 | (probably crowd textures 34 (anim. frame 2))
+0x1FBAB680 | (probably crowd textures 35 (anim. frame 3))
+0x1FBBBAC0 | (probably crowd textures 36 (anim. frame 3))
+0x1FBCBF40 | (probably crowd textures 37 (anim. frame 4))
+0x1FBDC380 | (probably crowd textures 38 (anim. frame 4))
+0x1FBEC800 | (probably crowd textures 39 (anim. frame 5))
+0x1FBFCC40 | (probably crowd textures 40 (anim. frame 5))
+0x1FC0F080 | shadow texture
+0x1FC24D40 | tan tile
+0x1FC26180 | pink, blackish, blue-ish texture
+0x1FC2E5C0 | more blue mat texture
+0x1FC32A00 | hall textures? (clock, west kanji, curtain, etc.)
+0x1FC3F300 | crowd textures 41
+0x1FC4F740 | (probably crowd textures 42 (anim. frame 1))
+0x1FC5FBC0 | (probably crowd textures 43 (anim. frame 2))
+0x1FC70000 | (probably crowd textures 44 (anim. frame 2))
+0x1FC80480 | (probably crowd textures 45 (anim. frame 3))
+0x1FC908C0 | (probably crowd textures 46 (anim. frame 3))
+0x1FCA0D40 | (probably crowd textures 47 (anim. frame 4))
+0x1FCB1180 | (probably crowd textures 48 (anim. frame 4))
+0x1FCC1600 | (probably crowd textures 49 (anim. frame 5))
+0x1FCD1A40 | (probably crowd textures 50 (anim. frame 5))
+0x1FCE4100 | corner shadow
+0x1FCEA540 | planks wood floor texture 2 (vertical)
+0x1FCEE980 | mat/metalish?
+0x1FCF2DC0 | blue water-ish texture
+0x1FCFF9C0 | crowd textures 51
+0x1FD0FE00 | (probably crowd textures 52 (anim. frame 1))
+0x1FD20280 | (probably crowd textures 53 (anim. frame 2))
+0x1FD306C0 | (probably crowd textures 54 (anim. frame 2))
+0x1FD40B40 | (probably crowd textures 55 (anim. frame 3))
+0x1FD50F80 | (probably crowd textures 56 (anim. frame 3))
+0x1FD61400 | (probably crowd textures 57 (anim. frame 4))
+0x1FD71840 | (probably crowd textures 58 (anim. frame 4))
+0x1FD81CC0 | (probably crowd textures 59 (anim. frame 5))
+0x1FD92100 | (probably crowd textures 60 (anim. frame 5))
+0x1FDBAD40 | gray stone texture??
+0x1FDBC180 | tan mat texture? (darker fade on top)
+0x1FDC05C0 | dojo textures 1?
+0x1FDD0A00 | dojo textures 2?
+0x1FDD5E80 | crowd textures 61
+0x1FDE62C0 | crowd textures 62
+0x1FDF6740 | (probably crowd textures 63)
+0x1FE06B80 | (probably crowd textures 64)
+0x1FE17000 | (probably crowd textures 65)
+0x1FE27440 | (probably crowd textures 66)
+0x1FE378C0 | (probably crowd textures 67)
+0x1FE47D00 | (probably crowd textures 68)
+0x1FE58180 | (probably crowd textures 69)
+0x1FE685C0 | (probably crowd textures 70)
+0x1FE79F80 | shadow texture
+0x1FE8BF80 | blue tile
+0x1FE8D3C0 | gray mats and ??
+0x1FE91800 | blue water-ish texture 2
+0x1FE95C40 | blue guardrail with lower protection
+0x1FEA6A80 | crowd textures 71
+0x1FEB6EC0 | (probably crowd textures 72)
+0x1FEC7340 | (probably crowd textures 73)
+0x1FED7780 | (probably crowd textures 74)
+0x1FEE7C00 | (probably crowd textures 75)
+0x1FEF8040 | (probably crowd textures 76)
+0x1FF084C0 | (probably crowd textures 77)
+0x1FF18900 | (probably crowd textures 78)
+0x1FF28D80 | (probably crowd textures 79)
+0x1FF391C0 | (probably crowd textures 80)
+0x1FF5AB00 | vertical wood floor texture 2
+0x1FF5EF40 | blue mat texture again
+0x1FF63380 | gray guardrails
+0x1FF6B7C0 | cage link texture? (regular cage match?)
+0x1FF6CC00 | brushed metal texture??
+0x1FF76080 | crowd textures 81
+0x1FF864C0 | (probably crowd textures 82)
+0x1FF96940 | (probably crowd textures 83)
+0x1FFA6D80 | (probably crowd textures 84)
+0x1FFB7200 | (probably crowd textures 85)
+0x1FFC7640 | (probably crowd textures 86)
+0x1FFD7AC0 | (probably crowd textures 87)
+0x1FFE7F00 | (probably crowd textures 88)
+0x1FFF8380 | (probably crowd textures 89)
+0x200087C0 | (probably crowd textures 90)
+0x2001AF40 | transparent black
+0x2003D700 | dark brown stone texture?
+0x20041B40 | dark brown tile
+0x20042F80 | tan mats 2 (darker at top)
+0x200473C0 | blue guardrails (wide) 2
+0x2004F800 | barbed wire with exploding bulbs
+0x20053C40 | looks like default ringpost textures
+0x20056080 | black mats?? or possibly the boxes on the outside in explosion deathmatch
+0x200602C0 | crowd textures 91
+0x20070700 | (probably crowd textures 92)
+0x20080B80 | (probably crowd textures 93)
+0x20090FC0 | (probably crowd textures 94)
+0x200A1440 | (probably crowd textures 95)
+0x200B1880 | (probably crowd textures 96)
+0x200C1D00 | (probably crowd textures 97)
+0x200D2140 | (probably crowd textures 98)
+0x200E25C0 | (probably crowd textures 99)
+0x200F2A00 | (probably crowd textures 100)
+0x20107580 | transparent black
+0x20119AC0 | blue stone-ish
+0x2011BF00 | board and lightbulb 1 (wide lightbulb)
+0x20120340 | blue guardrails (wide) 3, but more teal?
+0x20128780 | horizontal barbed wire 1 (brighter)
+0x201329C0 | crowd textures 101
+0x20142E00 | (probably crowd textures 102)
+0x20153280 | (probably crowd textures 103)
+0x201636C0 | (probably crowd textures 104)
+0x20173B40 | (probably crowd textures 105)
+0x20183F80 | (probably crowd textures 106)
+0x20194400 | (probably crowd textures 107)
+0x201A4840 | (probably crowd textures 108)
+0x201B4CC0 | (probably crowd textures 109)
+0x201C5100 | (probably crowd textures 110)
+0x201D88C0 | transparent black
+0x201DB000 | board and lightbulb 2 (thin lightbulb)
+0x201DF440 | horizontal barbed wire 2 (darker)
+0x201E0880 | some sort of transparent rounded rectangle (only top edge is rounded)
+0x201F2AC0 | blue stone thing xxx
+0x201F4F00 | board and lightbulb 3 (wide lightbulb)
+0x201F9340 | blue guardrails (wide) 4, but more teal?
+0x20201780 | horizontal barbed wire 3 (brighter)
+0x2020B9C0 | crowd textures 111
+0x2021BE00 | (probably crowd textures 112)
+0x2022C280 | (probably crowd textures 113)
+0x2023C6C0 | (probably crowd textures 114)
+0x2024CB40 | (probably crowd textures 115)
+0x2025CF80 | (probably crowd textures 116)
+0x2026D400 | (probably crowd textures 117)
+0x2027D840 | (probably crowd textures 118)
+0x2028DCC0 | (probably crowd textures 119)
+0x2029E100 | (probably crowd textures 120)
+0x202B18C0 | transparent black
+0x202BA440 | board and lightbulb 4 (thin lightbulb)
+0x202BE880 | some sort of transparent rounded rectangle (only top edge is rounded)
+0x202CE900 | gray stone/cloud texture
+0x202D2D40 | large 12-sided blue mat texture
+0x202E3180 | white mat thing?? with cage shadow on top and blue on bottom
+0x202E75C0 | black with white streaks
+0x202E9A00 | cage chain link 2 (gruesome fighting)
+0x202EBA80 | gruesome fighting crowd 1a (top)
+0x202FBEC0 | gruesome fighting crowd 2a (top left)
+0x2030C300 | gruesome fighting crowd 3a (left)
+0x2031C740 | gruesome fighting crowd 4a (bottom)
+0x2032CB80 | gruesome fighting crowd 5a (bottom left)
+0x2033D000 | gruesome fighting crowd 1b (top)
+0x2034D440 | (probably gruesome fighting crowd 2b (top left))
+0x2035D880 | (probably gruesome fighting crowd 3b (left))
+0x2036DCC0 | (probably gruesome fighting crowd 4b (bottom))
+0x2037E100 | (probably gruesome fighting crowd 5b (bottom left))
+0x2038E580 | gruesome fighting crowd 1c (top)
+0x2039E9C0 | (probably gruesome fighting crowd 2c (top left))
+0x203AEE00 | (probably gruesome fighting crowd 3c (left))
+0x203BF240 | (probably gruesome fighting crowd 4c (bottom))
+0x203CF680 | (probably gruesome fighting crowd 5c (bottom left))
+0x203DFB00 | gruesome fighting crowd 1d (top)
+0x203EFF40 | (probably gruesome fighting crowd 2d (top left))
+0x20400380 | (probably gruesome fighting crowd 3d (left))
+0x204107C0 | (probably gruesome fighting crowd 4d (bottom))
+0x20420C00 | (probably gruesome fighting crowd 5d (bottom left))
+0x20431080 | gruesome fighting crowd 1e (top)
+0x204414C0 | (probably gruesome fighting crowd 2e (top left))
+0x20451900 | (probably gruesome fighting crowd 3e (left))
+0x20461D40 | (probably gruesome fighting crowd 4e (bottom))
+0x20472180 | (probably gruesome fighting crowd 5e (bottom left))
+0x20482840 | giant white blob 1 (ring mat?)
+0x20492C80 | giant white blob 2 (ring mat?)
+0x204A30C0 | giant white blob 3 (ring mat?)
+0x204B3880 | www.spike.co.jp ring skirts
+0x204BBCC0 | VJP ring mat
+0x204CC880 | blue ring skirts
+0x204D4CC0 | "S" ring mat
+0x204E5880 | super nova ring skirts
+0x204EDCC0 | super nova ring mat
+0x204FE880 | black ring skirts
+0x20506CC0 | neo-1 ring mat
+0x20517880 | dark blue ring skirts
+0x2051FCC0 | black/white ring mat
+0x20530880 | DEEV ring skirts
+0x20538CC0 | visya ring mat
+0x20549880 | azteca-pit ring skirts
+0x20551CC0 | azteca-pit ring mat
+0x20562880 | lost almond ring skirts
+0x2056ACC0 | lost almond ring mat
+0x2057B880 | navy blue ring skirts
+0x20583CC0 | kansai pro ring mat?
+0x20594880 | s-dojo ring skirts
+0x2059CCC0 | s-dojo ring mat
+0x205AD880 | b2t ring skirts
+0x205B5CC0 | b2t ring mat
+0x205C6880 | black ring skirts
+0x205CECC0 | blue/gray and dark outer ring mat
+0x205DF880 | FomeT ring skirts
+0x205E7CC0 | AAA/Fake Corona ring mat
+0x205F8880 | black ring skirts 2
+0x20600CC0 | HIGH CLASS ring mat
+0x20611880 | gray ring skirts
+0x20619CC0 | BLADE ring mat
+0x2062A880 | blue ring skirts
+0x20632CC0 | another ring mat with a lot of sponsors
+0x20643880 | WOMEN ring skirts
+0x2064BCC0 | WOMEN ring mat
+0x2065C880 | more blue ring skirts, but with gray
+0x20664CC0 | Independent World ring mat
+0x20675880 | teal blue ring skirts
+0x2067DCC0 | solid blue ring mat
+0x2068E880 | NONNON/GONGS ring skirts
+0x20696CC0 | NONNON/GONGS ring mat
+0x206A7880 | UWH ring skirts
+0x206AFCC0 | UWH solid blue ring mat
+0x206C0880 | SPIKE RING ring skirts
+0x206C8CC0 | BATTRATION ring mat
+0x206D9880 | SWA ring skirts
+0x206E1CC0 | SWA ring mat
+0x206F2880 | white ring skirts
+0x206FACC0 | white ring mat
+0x2070B880 | white ring skirts
+0x20713CC0 | white ring mat
+0x20724880 | white ring skirts
+0x2072CCC0 | white ring mat
+0x20741100 | blue post
+0x20743540 | blue full pad turnbuckle with "CRIO"
+0x20749200 | red post
+0x2074B640 | white (some red) full pad turnbuckle with "CRIO"
+0x20751300 | red post
+0x20753740 | red full pad turnbuckle with "CRIO"
+0x20759400 | blue post
+0x2075B840 | white (some blue) full pad turnbuckle with "CRIO"
+0x20762B40 | blue post
+0x20764F80 | blue turnbuckles
+0x2076BE80 | 
+0x2076E2C0 | 
+0x207751C0 | 
+0x20777600 | 
+0x2077E500 | 
+0x20780940 | 
+0x20787B40 | 
+0x20789F80 | 
+0x20790E80 | 
+0x207932C0 | 
+0x2079A1C0 | 
+0x2079C600 | 
+0x207A3500 | 
+0x207A5940 | 
+0x207AB900 | 
+0x207ADD40 | 
+0x207B3A00 | 
+0x207B5E40 | 
+0x207BBB00 | 
+0x207BDF40 | 
+0x207C3C00 | 
+0x207C6040 | 
+0x207CC100 | 
+0x207CE540 | 
+0x207D4200 | 
+0x207D6640 | 
+0x207DC300 | 
+0x207DE740 | 
+0x207E4400 | 
+0x207E6840 | 
+0x207EDB40 | 
+0x207EFF80 | 
+0x207F6E80 | 
+0x207F92C0 | 
+0x208001C0 | 
+0x20802600 | 
+0x20809500 | 
+0x2080B940 | 
+0x20812B40 | 
+0x20814F80 | 
+0x2081BE80 | 
+0x2081E2C0 | 
+0x208251C0 | 
+0x20827600 | 
+0x2082E500 | 
+0x20830940 | 
+0x20837B40 | 
+0x20839F80 | 
+0x20840E80 | 
+0x208432C0 | 
+0x2084A1C0 | 
+0x2084C600 | 
+0x20853500 | 
+0x20855940 | 
+0x2085CB40 | 
+0x2085EF80 | 
+0x20865E80 | 
+0x208682C0 | 
+0x2086F1C0 | 
+0x20871600 | 
+0x20878500 | 
+0x2087A940 | 
+0x20881B40 | 
+0x20883F80 | 
+0x2088AE80 | 
+0x2088D2C0 | 
+0x208941C0 | 
+0x20896600 | 
+0x2089D500 | 
+0x2089F940 | 
+0x208A6B40 | 
+0x208A8F80 | 
+0x208AFE80 | 
+0x208B22C0 | 
+0x208B91C0 | 
+0x208BB600 | 
+0x208C2500 | 
+0x208C4940 | 
+0x208CBB40 | 
+0x208CDF80 | 
+0x208D4E80 | 
+0x208D72C0 | 
+0x208DE1C0 | 
+0x208E0600 | 
+0x208E7500 | 
+0x208E9940 | 
+0x208F0B40 | 
+0x208F2F80 | 
+0x208F9E80 | 
+0x208FC2C0 | 
+0x209031C0 | 
+0x20905600 | 
+0x2090C500 | 
+0x2090E940 | 
+0x20914900 | 
+0x20916D40 | 
+0x2091CA00 | 
+0x2091EE40 | 
+0x20924B00 | 
+0x20926F40 | 
+0x2092CC00 | 
+0x2092F040 | 
+0x20935100 | 
+0x20937540 | 
+0x2093D200 | 
+0x2093F640 | 
+0x20945300 | 
+0x20947740 | 
+0x2094D400 | 
+0x2094F840 | 
+0x20955900 | 
+0x20957D40 | 
+0x2095DA00 | 
+0x2095FE40 | 
+0x20965B00 | 
+0x20967F40 | 
+0x2096DC00 | 
+0x20970040 | 
+0x20976100 | 
+0x20978540 | 
+0x2097E200 | 
+0x20980640 | 
+0x20986300 | 
+0x20988740 | 
+0x2098E400 | 
+0x20990840 | 
+0x20997B40 | 
+0x20999F80 | 
+0x209A0E80 | 
+0x209A32C0 | 
+0x209AA1C0 | 
+0x209AC600 | 
+0x209B3500 | 
+0x209B5940 | 
+0x209BCB40 | 
+0x209BEF80 | 
+0x209C5E80 | 
+0x209C82C0 | 
+0x209CF1C0 | 
+0x209D1600 | 
+0x209D8500 | 
+0x209DA940 | 
+0x209E0900 | 
+0x209E2D40 | 
+0x209E8A00 | 
+0x209EAE40 | 
+0x209F0B00 | 
+0x209F2F40 | 
+0x209F8C00 | 
+0x209FB040 | 
+0x20A01100 | blue post
+0x20A03540 | blue turnbuckle pads
+0x20A09200 | 
+0x20A0B640 | 
+0x20A11300 | 
+0x20A13740 | 
+0x20A19400 | 
+0x20A1B840 | 
+0x20A21900 | 
+0x20A23D40 | 
+0x20A29A00 | 
+0x20A2BE40 | 
+0x20A31B00 | 
+0x20A33F40 | 
+0x20A39C00 | 
+0x20A3C040 | 
+0x20A42100 | 
+0x20A44540 | 
+0x20A4A200 | 
+0x20A4C640 | 
+0x20A52300 | 
+0x20A54740 | 
+0x20A5A400 | another post again
+0x20A5C840 | more of the turnbuckle crap
+0x20A62900 | (probably post parts 1/4)
+0x20A64D40 | (probably turnbuckle parts 1/4)
+0x20A6AA00 | (probably post parts 2/4)
+0x20A6CE40 | (probably turnbuckle parts 2/4)
+0x20A72B00 | (probably post parts 3/4)
+0x20A74F40 | (probably turnbuckle parts 3/4)
+0x20A7AC00 | post parts 4/4
+0x20A7D040 | turnbuckle parts 4/4 (big pad)
+0x20A83100 | (probably post parts 1/4)
+0x20A85540 | (probably turnbuckle parts 1/4)
+0x20A8B200 | (probably post parts 2/4)
+0x20A8D640 | (probably turnbuckle parts 2/4)
+0x20A93300 | (probably post parts 3/4)
+0x20A95740 | (probably turnbuckle parts 3/4)
+0x20A9B400 | (probably post parts 4/4)
+0x20A9D840 | turnbuckle parts 4/4? (separate pads 1?)
+0x20AA4B40 | post parts 1/4 (white)
+0x20AA6F80 | turnbuckle parts 1/4 (separate pads 2?)
+0x20AADE80 | post parts 2/4 (white)
+0x20AB02C0 | turnbuckle parts 2/4 (separate pads 2?)
+0x20AB71C0 | post parts 3/4 (white)
+0x20AB9600 | turnbuckle parts 3/4 (separate pads 2?)
+0x20AC0500 | post parts 4/4 (white)
+0x20AC2940 | turnbuckle parts 4/4 (separate pads 2?)
+0x2E641800 | grid test screen (yoneda/gridtest.vpf?)
