@@ -1,19 +1,36 @@
 incomplete VPF0 format documentation
-
+====================================
+[Header]
 0x00-0x03: file magic ("VPF0"/0x56,0x50,0x46,0x30)
-0x04-0x07: file size of some sort
+0x04-0x07: file size of pixel data
 0x08-0x09: purpose currently unknown
 0x0A-0x0B: image width (little endian, e.g. 0x80,0x02 = 640)
 0x0C-0x0D: image height (little endian, e.g. 0xC0,0x01 = 448)
 0x0E-0x0F: image color depth (typically 0x08,0x00 (8bpp) or 0x18,0x00 (24bpp))
 0x10-0x1F: ???
 
-8bpp images
-0x0020-0x041F: palette table (typically 256 colors at 4 channels per color)
-0x0420: data begins
+[4bpp images] (when 0x0E,0x0F == 0x04,0x00)
+0x0020-0x005F: palette table (16 colors at 4 channels per color)
+0x0060: data begins
 
-24bpp images
-0x0020: data begins
+[8bpp images] (when 0x0E,0x0F == 0x08,0x00)
+0x0020-0x041F: palette table (256 colors at 4 channels per color)
+0x0420: data begins (each byte is a palette index)
+
+[24bpp images] (when 0x0E,0x0F == 0x18,0x00)
+0x0020: data begins (each pixel is three bytes, RGB order?)
+
+[on the values at 0x08,0x09]
+the only 24bpp image I've seen has 0x01,0x00 at this area.
+
+the only 4bpp image I've seen has 0x14,0x00 at this area.
+
+8bpp images tend to have 0x13,0x00 at this area.
+
+I'm wondering if this is possibly a bitflag...
+
+[Example Headers]
+(without the values at 0x10-0x1F)
 
 8bpp format example image header (at 0x000CD800 in USA version of FPR.ROM):
 VPF0

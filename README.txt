@@ -16,7 +16,8 @@ This version is WIP for various reasons, including, but not limited to:
 ================================================================================
 Usage
 ================================================================================
-Upon opening the program, you will see a menu bar and a blank window.
+Upon opening the program, you will see a menu bar, a blank part of the window,
+and the status bar.
 
 Here is a crude ASCII diagram of the main window:
 +------------------------------+
@@ -31,6 +32,8 @@ Here is a crude ASCII diagram of the main window:
 |                              |
 |                              |
 |                              |
++------------------------------+
+| Status bar                |//|
 +------------------------------+
 
 [File menu]
@@ -51,7 +54,10 @@ legend:
 - removal
 ~ internal thing
 
-v0.0.2 - (in development)
+v0.0.3 - (in development)
+* no notes yet
+
+v0.0.2 - 2016/10/23
 ! Fixed bug when trying to save a PNG without loading a file.
 + Added support for 24bpp VPF0 images.
 + Allow for dragging and dropping files onto the window.
@@ -64,8 +70,8 @@ v0.0.1 - 2016/10/22
 ================================================================================
 Planned Features
 ================================================================================
-* Handle 4BPP format (at least one 4BPP VPF0 is in the USA FPR executable)
-* PNG -> VPF0 conversion???
+* Handle 4BPP format (at least one 4BPP VPF0 is in the USA FPR executable??)
+* PNG -> VPF0 conversion (8bpp and 24bpp)
 
 ================================================================================
 License
