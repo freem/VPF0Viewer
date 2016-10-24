@@ -29,7 +29,7 @@ namespace VPF0toPNG
 		}
 
 		private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
-			MessageBox.Show("Fire Pro Wrestling Returns VPF0 Viewer and Converter v0.02 (2016/10/22) by freem\nVisit http://firepro.ajworld.net/ for more information.", "About VPF0 Viewer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			MessageBox.Show("Fire Pro Wrestling Returns VPF0 Viewer and Converter v0.0.2a (2016/10/23) by freem\nVisit http://firepro.ajworld.net/ for more information.", "About VPF0 Viewer", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void openToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -102,12 +102,12 @@ namespace VPF0toPNG
 				*/
 			}
 			else if (imageBPP == 8) {
-				/* do the palette evolution*/
 				ReadPalette_8BPP(vpf0File, br);
-				vpf0File.Seek(0x0420, SeekOrigin.Begin); // xxx: assumption based on 8bpp files having 256 palette entries
+				// this location is an assumption based on 256 colors:
+				vpf0File.Seek(0x0420, SeekOrigin.Begin);
 			}
 			else {
-				/* assuming 24bpp... might be a bad idea if other formats exist */
+				/* assuming 24bpp... might be a bad idea if other in-between formats exist */
 				vpf0File.Seek(0x20, SeekOrigin.Begin);
 			}
 
@@ -143,18 +143,30 @@ namespace VPF0toPNG
 		}
 
 		/*
+		 * ReadPaletteSection(FileStream, BinaryReader, int)
+		 * Handles reading a partial chunk (8 colors) of the palette.
+		 */
+		private void ReadPaletteSection(FileStream _fs, BinaryReader _br, int _start){
+			byte[] tempData = new byte[4];
+			for(int i = _start; i < _start+8; i++){
+				tempData = _br.ReadBytes(4);
+				// multiply alpha by 2; assumption that may not be true...
+				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
+				imagePalette[i] = Color.FromArgb(tempData[3],tempData[0],tempData[1],tempData[2]);
+			}
+		}
+
+		/*
 		 * ReadPalette_4BPP(FileStream, BinaryReader)
 		 * Reads the palette in for a 4bpp image. Assumes 16 colors in the palette.
 		 */
 		private void ReadPalette_4BPP(FileStream _fs, BinaryReader _br){
 			_fs.Seek(0x20, SeekOrigin.Begin);
-			byte[] tempData = new byte[4];
-			for (int i = 0; i < 16; i++) {
-				tempData = _br.ReadBytes(4);
-				/* multiply alpha by 2; assumption that may not be true... */
-				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
-				imagePalette[i] = Color.FromArgb(tempData[3],tempData[0],tempData[1],tempData[2]);
-			}
+			// 16 colors
+			ReadPaletteSection(_fs,_br,0x00);
+			ReadPaletteSection(_fs,_br,0x10);
+			ReadPaletteSection(_fs,_br,0x08);
+			ReadPaletteSection(_fs,_br,0x18);
 		}
 
 		/*
@@ -163,13 +175,39 @@ namespace VPF0toPNG
 		 */
 		private void ReadPalette_8BPP(FileStream _fs, BinaryReader _br) {
 			_fs.Seek(0x20, SeekOrigin.Begin);
-			byte[] tempData = new byte[4];
-			for (int i = 0; i < 256; i++) {
-				tempData = _br.ReadBytes(4);
-				/* multiply alpha by 2; assumption that may not be true... */
-				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
-				imagePalette[i] = Color.FromArgb(tempData[3],tempData[0],tempData[1],tempData[2]);
-			}
+			// 256 colors
+			ReadPaletteSection(_fs,_br,0x00);
+			ReadPaletteSection(_fs,_br,0x10);
+			ReadPaletteSection(_fs,_br,0x08);
+			ReadPaletteSection(_fs,_br,0x18);
+			ReadPaletteSection(_fs,_br,0x20);
+			ReadPaletteSection(_fs,_br,0x30);
+			ReadPaletteSection(_fs,_br,0x28);
+			ReadPaletteSection(_fs,_br,0x38);
+			ReadPaletteSection(_fs,_br,0x40);
+			ReadPaletteSection(_fs,_br,0x50);
+			ReadPaletteSection(_fs,_br,0x48);
+			ReadPaletteSection(_fs,_br,0x58);
+			ReadPaletteSection(_fs,_br,0x60);
+			ReadPaletteSection(_fs,_br,0x70);
+			ReadPaletteSection(_fs,_br,0x68);
+			ReadPaletteSection(_fs,_br,0x78);
+			ReadPaletteSection(_fs,_br,0x80);
+			ReadPaletteSection(_fs,_br,0x90);
+			ReadPaletteSection(_fs,_br,0x88);
+			ReadPaletteSection(_fs,_br,0x98);
+			ReadPaletteSection(_fs,_br,0xA0);
+			ReadPaletteSection(_fs,_br,0xB0);
+			ReadPaletteSection(_fs,_br,0xA8);
+			ReadPaletteSection(_fs,_br,0xB8);
+			ReadPaletteSection(_fs,_br,0xC0);
+			ReadPaletteSection(_fs,_br,0xD0);
+			ReadPaletteSection(_fs,_br,0xC8);
+			ReadPaletteSection(_fs,_br,0xD8);
+			ReadPaletteSection(_fs,_br,0xE0);
+			ReadPaletteSection(_fs,_br,0xF0);
+			ReadPaletteSection(_fs,_br,0xE8);
+			ReadPaletteSection(_fs,_br,0xF8);
 		}
 
 		/*
