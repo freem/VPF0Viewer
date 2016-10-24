@@ -54,8 +54,8 @@ legend:
 - removal
 ~ internal thing
 
-v0.0.3 - (in development)
-* no notes yet
+v0.0.2a - 2016/10/23
+! Fixed palette bug with 8pp images. I should've known; the logos are the same.
 
 v0.0.2 - 2016/10/23
 ! Fixed bug when trying to save a PNG without loading a file.
