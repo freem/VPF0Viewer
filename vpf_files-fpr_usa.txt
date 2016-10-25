@@ -298,7 +298,7 @@ RING MATS
 0x205AD880 | b2t ring skirts
 0x205B5CC0 | b2t ring mat
 0x205C6880 | black ring skirts
-0x205CECC0 | blue/gray and dark outer ring mat
+0x205CECC0 | AWG ring mat (blue/gray and dark outer section)
 0x205DF880 | FomeT ring skirts
 0x205E7CC0 | AAA/Fake Corona ring mat
 0x205F8880 | black ring skirts 2
@@ -327,6 +327,8 @@ RING MATS
 0x20713CC0 | white ring mat
 0x20724880 | white ring skirts
 0x2072CCC0 | white ring mat
+-----------+--------------------------------------------------------------------
+POSTS and TURNBUCKLES
 -----------+--------------------------------------------------------------------
 0x20741100 | blue post
 0x20743540 | blue full pad turnbuckle with "CRIO"
@@ -512,6 +514,7 @@ RING MATS
 0x20A54740 | 
 0x20A5A400 | another post again
 0x20A5C840 | more of the turnbuckle crap
+-----------+--------------------------------------------------------------------
 0x20A62900 | (probably post parts 1/4)
 0x20A64D40 | (probably turnbuckle parts 1/4)
 0x20A6AA00 | (probably post parts 2/4)
@@ -520,6 +523,7 @@ RING MATS
 0x20A74F40 | (probably turnbuckle parts 3/4)
 0x20A7AC00 | post parts 4/4
 0x20A7D040 | turnbuckle parts 4/4 (big pad)
+-----------+--------------------------------------------------------------------
 0x20A83100 | (probably post parts 1/4)
 0x20A85540 | (probably turnbuckle parts 1/4)
 0x20A8B200 | (probably post parts 2/4)
@@ -528,6 +532,7 @@ RING MATS
 0x20A95740 | (probably turnbuckle parts 3/4)
 0x20A9B400 | (probably post parts 4/4)
 0x20A9D840 | turnbuckle parts 4/4? (separate pads 1?)
+-----------+--------------------------------------------------------------------
 0x20AA4B40 | post parts 1/4 (white)
 0x20AA6F80 | turnbuckle parts 1/4 (separate pads 2?)
 0x20AADE80 | post parts 2/4 (white)
