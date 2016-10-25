@@ -25,10 +25,6 @@ namespace VPF0toPNG
 			colorTableToolStripMenuItem.Enabled = false;
 			saveImagePaletteToolStripMenuItem.Enabled = false;
 
-			/* our current assumptions are the following: */
-			imagePalette = new Color[256]; // VPF0 files are 8bpp, and therefore have 256 colors.
-			// files can be any size, though, compared to logos (which are fixed at 128x128)
-
 			pboxPreview.BackColor = Color.FromArgb(127, 0, 0, 0);
 		}
 
@@ -98,9 +94,10 @@ namespace VPF0toPNG
 
 			/* todo: apparently VPF0 supports 4bpp, 8bpp, and 24bpp */
 			if (imageBPP == 4){
-				MessageBox.Show("4BPP reading is horribly broken", "Error opening 4BPP format file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("4BPP reading is slightly broken, sorry.", "Error opening 4BPP format file", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 				/*
+				imagePalette = new Color[16];
 				ReadPalette_4BPP(vpf0File, br);
 				colorTableToolStripMenuItem.Enabled = true;
 				saveImagePaletteToolStripMenuItem.Enabled = true;
@@ -108,6 +105,7 @@ namespace VPF0toPNG
 				*/
 			}
 			else if (imageBPP == 8) {
+				imagePalette = new Color[256];
 				ReadPalette_8BPP(vpf0File, br);
 				colorTableToolStripMenuItem.Enabled = true;
 				saveImagePaletteToolStripMenuItem.Enabled = true;
@@ -133,9 +131,11 @@ namespace VPF0toPNG
 			if (imageBPP == 24) {
 				ImageToBitmap_24BPP();
 			}
-			else {
-				// 4bpp and 8bpp share similar techniques?
+			else if(imageBPP == 8) {
 				ImageToBitmap_8BPP();
+			}
+			else if (imageBPP == 4) {
+				ImageToBitmap_4BPP();
 			}
 
 			/* throw the open filename in titlebar */
@@ -160,7 +160,7 @@ namespace VPF0toPNG
 			byte[] tempData = new byte[4];
 			for(int i = _start; i < _start+8; i++){
 				tempData = _br.ReadBytes(4);
-				// multiply alpha by 2; assumption that may not be true...
+				// multiply alpha by 2; an assumption that may not be true...
 				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
 				imagePalette[i] = Color.FromArgb(tempData[3],tempData[0],tempData[1],tempData[2]);
 			}
@@ -172,11 +172,13 @@ namespace VPF0toPNG
 		 */
 		private void ReadPalette_4BPP(FileStream _fs, BinaryReader _br){
 			_fs.Seek(0x20, SeekOrigin.Begin);
-			// 16 colors
-			ReadPaletteSection(_fs,_br,0x00);
-			ReadPaletteSection(_fs,_br,0x10);
-			ReadPaletteSection(_fs,_br,0x08);
-			ReadPaletteSection(_fs,_br,0x18);
+			byte[] tempData = new byte[4];
+			for (int i = 0; i < 16; i++) {
+				tempData = _br.ReadBytes(4);
+				// multiply alpha by 2; an assumption that may not be true...
+				tempData[3] = (byte)Math.Min((int)((tempData[3] + 1) * 2), 255);
+				imagePalette[i] = Color.FromArgb(tempData[3], tempData[0], tempData[1], tempData[2]);
+			}
 		}
 
 		/*
@@ -218,6 +220,27 @@ namespace VPF0toPNG
 			ReadPaletteSection(_fs,_br,0xF0);
 			ReadPaletteSection(_fs,_br,0xE8);
 			ReadPaletteSection(_fs,_br,0xF8);
+		}
+
+		/*
+		 * ImageToBitmap_4BPP()
+		 * Converts the imageData to the imageBitmap for 4BPP images.
+		 */
+		private void ImageToBitmap_4BPP() {
+			/* prepare bitmap */
+			imageBitmap = new Bitmap(imageWidth, imageHeight);
+			/* convert data */
+			for (int y = 0; y < imageHeight; y++) {
+				for (int x = 0; x < imageWidth; x+=2) {
+					// this is annoying, because the pixels are packed in nybbles.
+					int pixelLoc = (y * (imageWidth/2)) + (x/2);
+					byte packedPixel = imageData[pixelLoc];
+					imageBitmap.SetPixel(x, y, imagePalette[(packedPixel & 0xF0) >> 8]);
+					imageBitmap.SetPixel(x+1, y, imagePalette[(packedPixel & 0x0F)]);
+				}
+			}
+			/* display data */
+			this.pboxPreview.Image = imageBitmap;
 		}
 
 		/*

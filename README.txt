@@ -55,7 +55,8 @@ legend:
 ~ internal thing
 
 v0.0.3 - (in development)
-+ Very early version of GIF to VPF0 converter
++ Very early version of GIF to VPF0 converter (only supports non-transparent files)
+~ Progress on 4bpp VPF0 image support (not enabled yet)
 
 v0.0.2a - 2016/10/23
 ! Fixed palette bug with 8pp images. I should've known; the logos are the same.
@@ -73,8 +74,8 @@ v0.0.1 - 2016/10/22
 ================================================================================
 Planned Features
 ================================================================================
-* Color table viewing for 8bpp images
-* Handle 4BPP format (at least one 4BPP VPF0 is in the USA FPR executable??)
+* Color table viewing for 8bpp images (and 4bpp, after supported)
+* Handle 4BPP format (at least one 4BPP VPF0 is in the USA FPR executable)
 * PNG -> VPF0 conversion (8bpp and 24bpp)
 
 ================================================================================
