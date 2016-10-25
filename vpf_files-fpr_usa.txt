@@ -161,8 +161,8 @@ cage match arena???
 0x1FF5AB00 | vertical wood floor texture 2
 0x1FF5EF40 | blue mat texture again
 0x1FF63380 | gray guardrails
-0x1FF6B7C0 | cage link texture? (regular cage match?)
-0x1FF6CC00 | brushed metal texture??
+0x1FF6B7C0 | cage link texture (regular cage match)
+0x1FF6CC00 | brushed metal texture (cage frame and supports?)
 0x1FF76080 | crowd textures 81
 0x1FF864C0 | (probably crowd textures 82)
 0x1FF96940 | (probably crowd textures 83)
@@ -241,8 +241,8 @@ GRUESOME FIGHTING
 0x202BE880 | some sort of transparent rounded rectangle (only top edge is rounded)
 0x202CE900 | gray stone/cloud texture
 0x202D2D40 | large 12-sided blue mat texture
-0x202E3180 | white mat thing?? with cage shadow on top and blue on bottom
-0x202E75C0 | black with white streaks
+0x202E3180 | outer platform around cage (has cage and post shadows at top of texture)
+0x202E75C0 | cage post/fence texture
 0x202E9A00 | cage chain link 2 (gruesome fighting)
 0x202EBA80 | gruesome fighting crowd 1a (top)
 0x202FBEC0 | gruesome fighting crowd 2a (top left)
@@ -276,9 +276,9 @@ RING MATS
 0x20492C80 | white ring mat 2
 0x204A30C0 | white ring mat 3
 0x204B3880 | www.spike.co.jp ring skirts
-0x204BBCC0 | VJP ring mat
+0x204BBCC0 | view japan/VJP ring mat
 0x204CC880 | blue ring skirts
-0x204D4CC0 | "S" ring mat
+0x204D4CC0 | olive japan/"S" ring mat
 0x204E5880 | super nova ring skirts
 0x204EDCC0 | super nova ring mat
 0x204FE880 | black ring skirts
@@ -311,8 +311,8 @@ RING MATS
 0x2064BCC0 | WOMEN ring mat
 0x2065C880 | more blue ring skirts
 0x20664CC0 | Independent World ring mat
-0x20675880 | teal blue ring skirts
-0x2067DCC0 | solid blue ring mat
+0x20675880 | (EWF) teal blue ring skirts
+0x2067DCC0 | (EWF) solid blue ring mat
 0x2068E880 | NONNON/GONGS ring skirts
 0x20696CC0 | NONNON/GONGS ring mat
 0x206A7880 | UWH ring skirts
