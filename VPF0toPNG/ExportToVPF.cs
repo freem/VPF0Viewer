@@ -240,13 +240,17 @@ namespace VPF0toPNG
 			this.Close();
 		}
 
+		/*
+		 * WritePaletteSection(BitmapSource, BinaryWriter, int)
+		 * Writes a specified section of the palette.
+		 */
 		private void WritePaletteSection(BitmapSource _source, BinaryWriter _bw, int _start) {
 			for (int i = _start; i < _start + 8; i++) {
 				System.Windows.Media.Color temp = _source.Palette.Colors[i];
 				_bw.Write((byte)temp.R); // red
 				_bw.Write((byte)temp.G); // green
 				_bw.Write((byte)temp.B); // blue
-				_bw.Write((byte)0x7F); // normally alpha
+				_bw.Write((byte)0x7F); // xxx: alpha is hardcoded
 			}
 		}
 	}
