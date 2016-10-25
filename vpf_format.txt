@@ -13,6 +13,9 @@ incomplete VPF0 format documentation
 0x0020-0x005F: palette table (16 colors at 4 channels per color)
 0x0060: data begins
 
+special case: each byte contains two pixels! top and bottom nibbles (4 bits).
+As for which order they're in... I don't know! :D :(
+
 [8bpp images] (when 0x0E,0x0F == 0x08,0x00)
 0x0020-0x041F: palette table (256 colors at 4 channels per color)
 0x0420: data begins (each byte is a palette index)
@@ -28,6 +31,15 @@ the only 4bpp image I've seen has 0x14,0x00 at this area.
 8bpp images tend to have 0x13,0x00 at this area.
 
 I'm wondering if this is possibly a bitflag...
+
+[Palette Color Format]
+Red, Green, Blue, Alpha
+* RGB values are from 0x00-0xFF
+* Alpha is from 0x00-0x7F; probably multiplied by 2 before displaying
+
+[24BPP Color Format]
+Red, Green, Blue
+I don't think there's any alpha in 24bpp images?
 
 [Example Headers]
 (without the values at 0x10-0x1F)
@@ -47,3 +59,11 @@ VPF0
 0x1000 = 0x0010 = 16px wide
 0x1000 = 0x0010 = 16px tall
 0x1800 = 24bpp
+
+4bpp format example image header (from SLUS_217.02)
+VPF0
+0x00,0x08,0x00,0x00 = 0x00000800 = 2048 = image data length
+0x1400 = 0x0014 = 20??
+0x4000 = 0x0040 = 64px wide
+0x4000 = 0x0040 = 64px tall
+0x0400 = 0x0004 = 4bpp
