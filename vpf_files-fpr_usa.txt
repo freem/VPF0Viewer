@@ -3,6 +3,9 @@ VPF0 locations in FPR.ROM (USA version)
 this list is incomplete, but primarily because I don't want to go through
 a bunch of turnbuckle entries.
 
+-----------+--------------------------------------------------------------------
+General Stuff
+-----------+--------------------------------------------------------------------
 0x000CD800 | agetec logo
 0x001156C0 | smoke
 0x00116C40 | light beams
@@ -12,10 +15,13 @@ a bunch of turnbuckle entries.
 0x0011CBC0 | sparks?
 0x0011E800 | [AIKOH/CD_ROM.VPF?] "Now Loading" items
 0x001AE800 | spike logo
+-----------+--------------------------------------------------------------------
+SPIKE DOME
+-----------+--------------------------------------------------------------------
 0x1F8DB9C0 | gray texture
 0x1F8DFE00 | smaller gray texture
-0x1F8E1240 | gray mat texture?
-0x1F8E3680 | blue mat texture 1? (lighter)
+0x1F8E1240 | ramp texture?
+0x1F8E3680 | blue mat texture 1 (lighter)
 0x1F8E7AC0 | gray/black guardrail textures
 0x1F8F8680 | crowd textures 1  (anim. frame 1)
 0x1F908AC0 | crowd textures 2  (anim. frame 1)
@@ -27,9 +33,12 @@ a bunch of turnbuckle entries.
 0x1F96A500 | crowd textures 8  (anim. frame 4)
 0x1F97A980 | crowd textures 9  (anim. frame 5)
 0x1F98ADC0 | crowd textures 10 (anim. frame 5)
+-----------+--------------------------------------------------------------------
+M.A. DOME
+-----------+--------------------------------------------------------------------
 0x1F99D4C0 | transparent black
 0x1F9ADDC0 | green stone texture?
-0x1F9B2200 | blue mat texture 2? (darker)
+0x1F9B2200 | blue mat texture 2 (darker)
 0x1F9B6640 | blue guardrail texture 1 (tall)
 0x1F9C76C0 | crowd textures 11 (anim. frame 1)
 0x1F9D7B00 | crowd textures 12 (anim. frame 1)
@@ -41,9 +50,12 @@ a bunch of turnbuckle entries.
 0x1FA39540 | crowd textures 18 (anim. frame 4)
 0x1FA499C0 | crowd textures 19 (anim. frame 5)
 0x1FA59E00 | crowd textures 20 (anim. frame 5)
+-----------+--------------------------------------------------------------------
+BIG DOME
+-----------+--------------------------------------------------------------------
 0x1FA6EA40 | transparent black
 0x1FA80040 | parquet wood floor texture
-0x1FA84480 | blue mat texture 3? (darker fade on top)
+0x1FA84480 | blue mat texture 3 (darker fade on top)
 0x1FA888C0 | blue guardrail texture 2 (wide)
 0x1FA99940 | crowd textures 21
 0x1FAA9D80 | (probably crowd textures 22 (anim. frame 1))
@@ -55,6 +67,9 @@ a bunch of turnbuckle entries.
 0x1FB0B7C0 | (probably crowd textures 28 (anim. frame 4))
 0x1FB1BC40 | (probably crowd textures 29 (anim. frame 5))
 0x1FB2C080 | (probably crowd textures 30 (anim. frame 5))
+-----------+--------------------------------------------------------------------
+TOWN HALL
+-----------+--------------------------------------------------------------------
 0x1FB3FE00 | transparent black
 0x1FB5B400 | planks wood floor texture 1 (horizontal)
 0x1FB5F840 | yellowish texture?
@@ -70,6 +85,9 @@ a bunch of turnbuckle entries.
 0x1FBDC380 | (probably crowd textures 38 (anim. frame 4))
 0x1FBEC800 | (probably crowd textures 39 (anim. frame 5))
 0x1FBFCC40 | (probably crowd textures 40 (anim. frame 5))
+-----------+--------------------------------------------------------------------
+No. 1 RING
+-----------+--------------------------------------------------------------------
 0x1FC0F080 | shadow texture
 0x1FC24D40 | tan tile
 0x1FC26180 | pink, blackish, blue-ish texture
@@ -85,6 +103,9 @@ a bunch of turnbuckle entries.
 0x1FCB1180 | (probably crowd textures 48 (anim. frame 4))
 0x1FCC1600 | (probably crowd textures 49 (anim. frame 5))
 0x1FCD1A40 | (probably crowd textures 50 (anim. frame 5))
+-----------+--------------------------------------------------------------------
+WEST DOME
+-----------+--------------------------------------------------------------------
 0x1FCE4100 | corner shadow
 0x1FCEA540 | planks wood floor texture 2 (vertical)
 0x1FCEE980 | mat/metalish?
@@ -99,6 +120,9 @@ a bunch of turnbuckle entries.
 0x1FD71840 | (probably crowd textures 58 (anim. frame 4))
 0x1FD81CC0 | (probably crowd textures 59 (anim. frame 5))
 0x1FD92100 | (probably crowd textures 60 (anim. frame 5))
+-----------+--------------------------------------------------------------------
+DOJO
+-----------+--------------------------------------------------------------------
 0x1FDBAD40 | gray stone texture??
 0x1FDBC180 | tan mat texture? (darker fade on top)
 0x1FDC05C0 | dojo textures 1?
@@ -113,6 +137,9 @@ a bunch of turnbuckle entries.
 0x1FE47D00 | (probably crowd textures 68)
 0x1FE58180 | (probably crowd textures 69)
 0x1FE685C0 | (probably crowd textures 70)
+-----------+--------------------------------------------------------------------
+USA DOME
+-----------+--------------------------------------------------------------------
 0x1FE79F80 | shadow texture
 0x1FE8BF80 | blue tile
 0x1FE8D3C0 | gray mats and ??
@@ -128,6 +155,9 @@ a bunch of turnbuckle entries.
 0x1FF18900 | (probably crowd textures 78)
 0x1FF28D80 | (probably crowd textures 79)
 0x1FF391C0 | (probably crowd textures 80)
+-----------+--------------------------------------------------------------------
+cage match arena???
+-----------+--------------------------------------------------------------------
 0x1FF5AB00 | vertical wood floor texture 2
 0x1FF5EF40 | blue mat texture again
 0x1FF63380 | gray guardrails
@@ -143,6 +173,9 @@ a bunch of turnbuckle entries.
 0x1FFE7F00 | (probably crowd textures 88)
 0x1FFF8380 | (probably crowd textures 89)
 0x200087C0 | (probably crowd textures 90)
+-----------+--------------------------------------------------------------------
+Barbed Wire Deathmatch arena
+-----------+--------------------------------------------------------------------
 0x2001AF40 | transparent black
 0x2003D700 | dark brown stone texture?
 0x20041B40 | dark brown tile
@@ -161,6 +194,9 @@ a bunch of turnbuckle entries.
 0x200D2140 | (probably crowd textures 98)
 0x200E25C0 | (probably crowd textures 99)
 0x200F2A00 | (probably crowd textures 100)
+-----------+--------------------------------------------------------------------
+Landmine Deathmatch arena
+-----------+--------------------------------------------------------------------
 0x20107580 | transparent black
 0x20119AC0 | blue stone-ish
 0x2011BF00 | board and lightbulb 1 (wide lightbulb)
@@ -176,6 +212,9 @@ a bunch of turnbuckle entries.
 0x201A4840 | (probably crowd textures 108)
 0x201B4CC0 | (probably crowd textures 109)
 0x201C5100 | (probably crowd textures 110)
+-----------+--------------------------------------------------------------------
+some other deathmatch arena??
+-----------+--------------------------------------------------------------------
 0x201D88C0 | transparent black
 0x201DB000 | board and lightbulb 2 (thin lightbulb)
 0x201DF440 | horizontal barbed wire 2 (darker)
@@ -194,6 +233,9 @@ a bunch of turnbuckle entries.
 0x2027D840 | (probably crowd textures 118)
 0x2028DCC0 | (probably crowd textures 119)
 0x2029E100 | (probably crowd textures 120)
+-----------+--------------------------------------------------------------------
+GRUESOME FIGHTING
+-----------+--------------------------------------------------------------------
 0x202B18C0 | transparent black
 0x202BA440 | board and lightbulb 4 (thin lightbulb)
 0x202BE880 | some sort of transparent rounded rectangle (only top edge is rounded)
@@ -227,9 +269,12 @@ a bunch of turnbuckle entries.
 0x20451900 | (probably gruesome fighting crowd 3e (left))
 0x20461D40 | (probably gruesome fighting crowd 4e (bottom))
 0x20472180 | (probably gruesome fighting crowd 5e (bottom left))
-0x20482840 | giant white blob 1 (ring mat?)
-0x20492C80 | giant white blob 2 (ring mat?)
-0x204A30C0 | giant white blob 3 (ring mat?)
+-----------+--------------------------------------------------------------------
+RING MATS
+-----------+--------------------------------------------------------------------
+0x20482840 | white ring mat 1
+0x20492C80 | white ring mat 2
+0x204A30C0 | white ring mat 3
 0x204B3880 | www.spike.co.jp ring skirts
 0x204BBCC0 | VJP ring mat
 0x204CC880 | blue ring skirts
@@ -261,10 +306,10 @@ a bunch of turnbuckle entries.
 0x20611880 | gray ring skirts
 0x20619CC0 | BLADE ring mat
 0x2062A880 | blue ring skirts
-0x20632CC0 | another ring mat with a lot of sponsors
+0x20632CC0 | S1 ring mat
 0x20643880 | WOMEN ring skirts
 0x2064BCC0 | WOMEN ring mat
-0x2065C880 | more blue ring skirts, but with gray
+0x2065C880 | more blue ring skirts
 0x20664CC0 | Independent World ring mat
 0x20675880 | teal blue ring skirts
 0x2067DCC0 | solid blue ring mat
@@ -282,6 +327,7 @@ a bunch of turnbuckle entries.
 0x20713CC0 | white ring mat
 0x20724880 | white ring skirts
 0x2072CCC0 | white ring mat
+-----------+--------------------------------------------------------------------
 0x20741100 | blue post
 0x20743540 | blue full pad turnbuckle with "CRIO"
 0x20749200 | red post
@@ -490,4 +536,5 @@ a bunch of turnbuckle entries.
 0x20AB9600 | turnbuckle parts 3/4 (separate pads 2?)
 0x20AC0500 | post parts 4/4 (white)
 0x20AC2940 | turnbuckle parts 4/4 (separate pads 2?)
+-----------+--------------------------------------------------------------------
 0x2E641800 | grid test screen (yoneda/gridtest.vpf?)
