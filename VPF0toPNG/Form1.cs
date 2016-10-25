@@ -19,7 +19,11 @@ namespace VPF0toPNG
 		public Form1() {
 			InitializeComponent();
 			this.Icon = VPF0toPNG.Properties.Resources.vpf0viewer;
-			saveToolStripMenuItem.Enabled = false; // don't let people try and be cute
+
+			// don't let people try and be cute
+			saveToolStripMenuItem.Enabled = false;
+			colorTableToolStripMenuItem.Enabled = false;
+			saveImagePaletteToolStripMenuItem.Enabled = false;
 
 			/* our current assumptions are the following: */
 			imagePalette = new Color[256]; // VPF0 files are 8bpp, and therefore have 256 colors.
@@ -29,7 +33,7 @@ namespace VPF0toPNG
 		}
 
 		private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
-			MessageBox.Show("Fire Pro Wrestling Returns VPF0 Viewer and Converter v0.0.2a (2016/10/23) by freem\nVisit http://firepro.ajworld.net/ for more information.", "About VPF0 Viewer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			MessageBox.Show("Fire Pro Wrestling Returns VPF0 Viewer and Converter v0.0.3 (2016/1x/xx) by freem\nVisit http://firepro.ajworld.net/ for more information.", "About VPF0 Viewer", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void openToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -98,16 +102,22 @@ namespace VPF0toPNG
 				return;
 				/*
 				ReadPalette_4BPP(vpf0File, br);
+				colorTableToolStripMenuItem.Enabled = true;
+				saveImagePaletteToolStripMenuItem.Enabled = true;
 				vpf0File.Seek(0x60, SeekOrigin.Begin);
 				*/
 			}
 			else if (imageBPP == 8) {
 				ReadPalette_8BPP(vpf0File, br);
+				colorTableToolStripMenuItem.Enabled = true;
+				saveImagePaletteToolStripMenuItem.Enabled = true;
 				// this location is an assumption based on 256 colors:
 				vpf0File.Seek(0x0420, SeekOrigin.Begin);
 			}
 			else {
 				/* assuming 24bpp... might be a bad idea if other in-between formats exist */
+				colorTableToolStripMenuItem.Enabled = false;
+				saveImagePaletteToolStripMenuItem.Enabled = false;
 				vpf0File.Seek(0x20, SeekOrigin.Begin);
 			}
 
@@ -273,6 +283,20 @@ namespace VPF0toPNG
 			else {
 				e.Effect = DragDropEffects.None;
 			}
+		}
+
+		private void colorTableToolStripMenuItem_Click(object sender, EventArgs e) {
+			// load color table item with existing palette
+		}
+
+		private void saveImagePaletteToolStripMenuItem_Click(object sender, EventArgs e) {
+			// currently unimplemented
+		}
+
+		private void exportGIFAsVPFToolStripMenuItem_Click(object sender, EventArgs e) {
+			// cool, now we get to play the money making game.
+			ExportToVPF exportForm = new ExportToVPF();
+			exportForm.Show();
 		}
 	}
 }

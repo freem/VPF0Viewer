@@ -29,10 +29,15 @@
 			this.pboxPreview = new System.Windows.Forms.PictureBox();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.exportGIFAsVPFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.saveImagePaletteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.colorTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -57,6 +62,7 @@
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.viewToolStripMenuItem,
             this.helpToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
@@ -67,42 +73,80 @@
 			// fileToolStripMenuItem
 			// 
 			this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportGIFAsVPFToolStripMenuItem,
+            this.toolStripSeparator2,
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
+            this.saveImagePaletteToolStripMenuItem,
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
 			this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
 			this.fileToolStripMenuItem.Text = "&File";
 			// 
+			// exportGIFAsVPFToolStripMenuItem
+			// 
+			this.exportGIFAsVPFToolStripMenuItem.Name = "exportGIFAsVPFToolStripMenuItem";
+			this.exportGIFAsVPFToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+			this.exportGIFAsVPFToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+			this.exportGIFAsVPFToolStripMenuItem.Text = "&Export GIF as VPF...";
+			this.exportGIFAsVPFToolStripMenuItem.Click += new System.EventHandler(this.exportGIFAsVPFToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(208, 6);
+			// 
 			// openToolStripMenuItem
 			// 
 			this.openToolStripMenuItem.Name = "openToolStripMenuItem";
 			this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-			this.openToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-			this.openToolStripMenuItem.Text = "&Open...";
+			this.openToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+			this.openToolStripMenuItem.Text = "&Open VPF File...";
 			this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
 			// 
 			// saveToolStripMenuItem
 			// 
 			this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
 			this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-			this.saveToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+			this.saveToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
 			this.saveToolStripMenuItem.Text = "&Save as PNG...";
 			this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+			// 
+			// saveImagePaletteToolStripMenuItem
+			// 
+			this.saveImagePaletteToolStripMenuItem.Name = "saveImagePaletteToolStripMenuItem";
+			this.saveImagePaletteToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+			this.saveImagePaletteToolStripMenuItem.Text = "Save Image &Palette...";
+			this.saveImagePaletteToolStripMenuItem.Click += new System.EventHandler(this.saveImagePaletteToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(182, 6);
+			this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
 			this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
 			this.exitToolStripMenuItem.Text = "E&xit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+			// 
+			// viewToolStripMenuItem
+			// 
+			this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorTableToolStripMenuItem});
+			this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+			this.viewToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+			this.viewToolStripMenuItem.Text = "&View";
+			// 
+			// colorTableToolStripMenuItem
+			// 
+			this.colorTableToolStripMenuItem.Name = "colorTableToolStripMenuItem";
+			this.colorTableToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.colorTableToolStripMenuItem.Text = "&Color Table...";
+			this.colorTableToolStripMenuItem.Click += new System.EventHandler(this.colorTableToolStripMenuItem_Click);
 			// 
 			// helpToolStripMenuItem
 			// 
@@ -175,6 +219,11 @@
 		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
 		private System.Windows.Forms.StatusStrip statusStrip1;
 		private System.Windows.Forms.ToolStripStatusLabel statusBarLabel;
+		private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem colorTableToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem saveImagePaletteToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem exportGIFAsVPFToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 	}
 }
 
