@@ -3,6 +3,10 @@ VPF0 locations in FPR.ROM (USA version)
 this list is incomplete, but primarily because I don't want to go through
 a bunch of turnbuckle entries.
 
+"turnbuckle" = 3x oval-ish
+"full pad" = 1x cylindrical
+"tall pad" = 1x triangular
+
 ===========+====================================================================
 General Stuff
 ===========+====================================================================
@@ -57,7 +61,7 @@ BIG DOME
 0x1FA80040 | parquet wood floor texture
 0x1FA84480 | blue mat texture 3 (darker fade on top)
 0x1FA888C0 | blue guardrail texture 2 (wide)
-0x1FA99940 | crowd textures 21
+0x1FA99940 | crowd textures 21 (anim. frame 1)
 0x1FAA9D80 | (probably crowd textures 22 (anim. frame 1))
 0x1FABA200 | (probably crowd textures 23 (anim. frame 2))
 0x1FACA640 | (probably crowd textures 24 (anim. frame 2))
@@ -75,7 +79,7 @@ TOWN HALL
 0x1FB5F840 | yellowish texture?
 0x1FB60480 | blue splash texture
 0x1FB648C0 | gym texture (clock, basketball hoop, etc.)
-0x1FB6A500 | crowd textures 31
+0x1FB6A500 | crowd textures 31 (anim. frame 1)
 0x1FB7A940 | (probably crowd textures 32 (anim. frame 1))
 0x1FB8ADC0 | (probably crowd textures 33 (anim. frame 2))
 0x1FB9B200 | (probably crowd textures 34 (anim. frame 2))
@@ -93,7 +97,7 @@ No. 1 RING
 0x1FC26180 | pink, blackish, blue-ish texture
 0x1FC2E5C0 | more blue mat texture
 0x1FC32A00 | hall textures? (clock, west kanji, curtain, etc.)
-0x1FC3F300 | crowd textures 41
+0x1FC3F300 | crowd textures 41 (anim. frame 1)
 0x1FC4F740 | (probably crowd textures 42 (anim. frame 1))
 0x1FC5FBC0 | (probably crowd textures 43 (anim. frame 2))
 0x1FC70000 | (probably crowd textures 44 (anim. frame 2))
@@ -110,7 +114,7 @@ WEST DOME
 0x1FCEA540 | planks wood floor texture 2 (vertical)
 0x1FCEE980 | mat/metalish?
 0x1FCF2DC0 | blue water-ish texture
-0x1FCFF9C0 | crowd textures 51
+0x1FCFF9C0 | crowd textures 51 (anim. frame 1)
 0x1FD0FE00 | (probably crowd textures 52 (anim. frame 1))
 0x1FD20280 | (probably crowd textures 53 (anim. frame 2))
 0x1FD306C0 | (probably crowd textures 54 (anim. frame 2))
@@ -127,8 +131,8 @@ DOJO
 0x1FDBC180 | tan mat texture? (darker fade on top)
 0x1FDC05C0 | dojo textures 1?
 0x1FDD0A00 | dojo textures 2?
-0x1FDD5E80 | crowd textures 61
-0x1FDE62C0 | crowd textures 62
+0x1FDD5E80 | crowd textures 61 (anim. frame 1)
+0x1FDE62C0 | crowd textures 62 (anim. frame 1)
 0x1FDF6740 | (probably crowd textures 63)
 0x1FE06B80 | (probably crowd textures 64)
 0x1FE17000 | (probably crowd textures 65)
@@ -145,7 +149,7 @@ USA DOME
 0x1FE8D3C0 | gray mats and ??
 0x1FE91800 | blue water-ish texture 2
 0x1FE95C40 | blue guardrail with lower protection
-0x1FEA6A80 | crowd textures 71
+0x1FEA6A80 | crowd textures 71 (anim. frame 1)
 0x1FEB6EC0 | (probably crowd textures 72)
 0x1FEC7340 | (probably crowd textures 73)
 0x1FED7780 | (probably crowd textures 74)
@@ -163,7 +167,7 @@ cage match arena???
 0x1FF63380 | gray guardrails
 0x1FF6B7C0 | cage link texture (regular cage match)
 0x1FF6CC00 | brushed metal texture (cage frame and supports?)
-0x1FF76080 | crowd textures 81
+0x1FF76080 | crowd textures 81 (anim. frame 1)
 0x1FF864C0 | (probably crowd textures 82)
 0x1FF96940 | (probably crowd textures 83)
 0x1FFA6D80 | (probably crowd textures 84)
@@ -184,7 +188,7 @@ Barbed Wire Deathmatch arena
 0x2004F800 | barbed wire with exploding bulbs
 0x20053C40 | looks like default ringpost textures
 0x20056080 | black mats?? or possibly the boxes on the outside in explosion deathmatch
-0x200602C0 | crowd textures 91
+0x200602C0 | crowd textures 91 (anim. frame 1)
 0x20070700 | (probably crowd textures 92)
 0x20080B80 | (probably crowd textures 93)
 0x20090FC0 | (probably crowd textures 94)
@@ -202,7 +206,7 @@ Landmine Deathmatch arena
 0x2011BF00 | board and lightbulb 1 (wide lightbulb)
 0x20120340 | blue guardrails (wide) 3, but more teal?
 0x20128780 | horizontal barbed wire 1 (brighter)
-0x201329C0 | crowd textures 101
+0x201329C0 | crowd textures 101 (anim. frame 1)
 0x20142E00 | (probably crowd textures 102)
 0x20153280 | (probably crowd textures 103)
 0x201636C0 | (probably crowd textures 104)
@@ -223,7 +227,7 @@ some other deathmatch arena??
 0x201F4F00 | board and lightbulb 3 (wide lightbulb)
 0x201F9340 | blue guardrails (wide) 4, but more teal?
 0x20201780 | horizontal barbed wire 3 (brighter)
-0x2020B9C0 | crowd textures 111
+0x2020B9C0 | crowd textures 111 (anim. frame 1)
 0x2021BE00 | (probably crowd textures 112)
 0x2022C280 | (probably crowd textures 113)
 0x2023C6C0 | (probably crowd textures 114)
@@ -244,27 +248,27 @@ GRUESOME FIGHTING
 0x202E3180 | outer platform around cage (has cage and post shadows at top of texture)
 0x202E75C0 | cage post/fence texture
 0x202E9A00 | cage chain link 2 (gruesome fighting)
-0x202EBA80 | gruesome fighting crowd 1a (top)
-0x202FBEC0 | gruesome fighting crowd 2a (top left)
-0x2030C300 | gruesome fighting crowd 3a (left)
-0x2031C740 | gruesome fighting crowd 4a (bottom)
-0x2032CB80 | gruesome fighting crowd 5a (bottom left)
-0x2033D000 | gruesome fighting crowd 1b (top)
+0x202EBA80 | gruesome fighting crowd 1a (top; anim. frame 1)
+0x202FBEC0 | gruesome fighting crowd 2a (top left; anim. frame 1)
+0x2030C300 | gruesome fighting crowd 3a (left; anim. frame 1)
+0x2031C740 | gruesome fighting crowd 4a (bottom; anim. frame 1)
+0x2032CB80 | gruesome fighting crowd 5a (bottom left; anim. frame 1)
+0x2033D000 | gruesome fighting crowd 1b (top; anim. frame 2)
 0x2034D440 | (probably gruesome fighting crowd 2b (top left))
 0x2035D880 | (probably gruesome fighting crowd 3b (left))
 0x2036DCC0 | (probably gruesome fighting crowd 4b (bottom))
 0x2037E100 | (probably gruesome fighting crowd 5b (bottom left))
-0x2038E580 | gruesome fighting crowd 1c (top)
+0x2038E580 | gruesome fighting crowd 1c (top; anim. frame 3)
 0x2039E9C0 | (probably gruesome fighting crowd 2c (top left))
 0x203AEE00 | (probably gruesome fighting crowd 3c (left))
 0x203BF240 | (probably gruesome fighting crowd 4c (bottom))
 0x203CF680 | (probably gruesome fighting crowd 5c (bottom left))
-0x203DFB00 | gruesome fighting crowd 1d (top)
+0x203DFB00 | gruesome fighting crowd 1d (top; anim. frame 4)
 0x203EFF40 | (probably gruesome fighting crowd 2d (top left))
 0x20400380 | (probably gruesome fighting crowd 3d (left))
 0x204107C0 | (probably gruesome fighting crowd 4d (bottom))
 0x20420C00 | (probably gruesome fighting crowd 5d (bottom left))
-0x20431080 | gruesome fighting crowd 1e (top)
+0x20431080 | gruesome fighting crowd 1e (top; anim. frame 5)
 0x204414C0 | (probably gruesome fighting crowd 2e (top left))
 0x20451900 | (probably gruesome fighting crowd 3e (left))
 0x20461D40 | (probably gruesome fighting crowd 4e (bottom))
@@ -366,7 +370,7 @@ POSTS and TURNBUCKLES
 0x20759400 | blue post
 0x2075B840 | white (some blue) full pad turnbuckle with "CRIO"
 -----------+--------------------------------------------------------------------
-[???]
+[Olive Japan?]
 0x20762B40 | blue post
 0x20764F80 | blue turnbuckles
 0x2076BE80 | red post
@@ -376,7 +380,7 @@ POSTS and TURNBUCKLES
 0x2077E500 | blue post
 0x20780940 | white turnbuckle with logo (some blue)
 -----------+--------------------------------------------------------------------
-[???]
+[Super NOVA?]
 0x20787B40 | gray post
 0x20789F80 | blue turnbuckles
 0x20790E80 | gray post
@@ -386,7 +390,7 @@ POSTS and TURNBUCKLES
 0x207A3500 | gray post
 0x207A5940 | white turnbuckles
 -----------+--------------------------------------------------------------------
-[???]
+[Neo-1?]
 0x207AB900 | white post
 0x207ADD40 | blue full pad turnbuckle
 0x207B3A00 | white post
@@ -396,7 +400,7 @@ POSTS and TURNBUCKLES
 0x207C3C00 | white(r) post (for some reason the top of the texture is different)
 0x207C6040 | white full pad turnbuckle
 -----------+--------------------------------------------------------------------
-[???]
+[Riki Pro?]
 0x207CC100 | blue post
 0x207CE540 | blue full pad turnbuckle
 0x207D4200 | red post
@@ -436,72 +440,88 @@ POSTS and TURNBUCKLES
 0x20853500 | gray post, different top
 0x20855940 | white lost almond turnbuckles
 -----------+--------------------------------------------------------------------
-0x2085CB40 | 
-0x2085EF80 | 
-0x20865E80 | 
-0x208682C0 | 
-0x2086F1C0 | 
-0x20871600 | 
-0x20878500 | 
-0x2087A940 | 
-0x20881B40 | 
-0x20883F80 | 
-0x2088AE80 | 
-0x2088D2C0 | 
-0x208941C0 | 
-0x20896600 | 
-0x2089D500 | 
-0x2089F940 | 
-0x208A6B40 | 
-0x208A8F80 | 
-0x208AFE80 | 
-0x208B22C0 | 
-0x208B91C0 | 
-0x208BB600 | 
-0x208C2500 | 
-0x208C4940 | 
-0x208CBB40 | 
-0x208CDF80 | 
-0x208D4E80 | 
-0x208D72C0 | 
-0x208DE1C0 | 
-0x208E0600 | 
-0x208E7500 | 
-0x208E9940 | 
-0x208F0B40 | 
-0x208F2F80 | 
-0x208F9E80 | 
-0x208FC2C0 | 
-0x209031C0 | 
-0x20905600 | 
-0x2090C500 | 
-0x2090E940 | 
-0x20914900 | 
-0x20916D40 | 
-0x2091CA00 | 
-0x2091EE40 | 
-0x20924B00 | 
-0x20926F40 | 
-0x2092CC00 | 
-0x2092F040 | 
-0x20935100 | 
-0x20937540 | 
-0x2093D200 | 
-0x2093F640 | 
-0x20945300 | 
-0x20947740 | 
-0x2094D400 | 
-0x2094F840 | 
-0x20955900 | 
-0x20957D40 | 
-0x2095DA00 | 
-0x2095FE40 | 
-0x20965B00 | 
-0x20967F40 | 
-0x2096DC00 | 
-0x20970040 | 
-0x20976100 | 
-0x20978540 | 
+[Kansai]
+0x2085CB40 | pink post
+0x2085EF80 | blue "sEa.V" turnbuckles
+0x20865E80 | pink post
+0x208682C0 | white "sEa.V" turnbuckles
+0x2086F1C0 | pink post
+0x20871600 | red "sEa.V" turnbuckles
+0x20878500 | pink post, different top
+0x2087A940 | white "sEa.V" turnbuckles
+-----------+--------------------------------------------------------------------
+[S-Dojo?]
+0x20881B40 | black post
+0x20883F80 | blue "big star" turnbuckles
+0x2088AE80 | black post
+0x2088D2C0 | white "big star" turnbuckles
+0x208941C0 | black post
+0x20896600 | red "big star" turnbuckles
+0x2089D500 | black post
+0x2089F940 | white "big star" turnbuckles
+-----------+--------------------------------------------------------------------
+[BBT?]
+0x208A6B40 | black post
+0x208A8F80 | blue turnbuckles
+0x208AFE80 | black post
+0x208B22C0 | black turnbuckles
+0x208B91C0 | black post
+0x208BB600 | red turnbuckles
+0x208C2500 | black post
+0x208C4940 | black turnbuckles
+-----------+--------------------------------------------------------------------
+[AWG?]
+0x208CBB40 | black post
+0x208CDF80 | red turnbuckles
+0x208D4E80 | black post
+0x208D72C0 | red turnbuckles
+0x208DE1C0 | black post
+0x208E0600 | red turnbuckles
+0x208E7500 | black post
+0x208E9940 | red turnbuckles
+-----------+--------------------------------------------------------------------
+[Mexico]
+0x208F0B40 | black post
+0x208F2F80 | gold turnbuckles
+0x208F9E80 | (probably black post)
+0x208FC2C0 | (probably gold turnbuckles)
+0x209031C0 | (probably black post)
+0x20905600 | (probably gold turnbuckles)
+0x2090C500 | (probably black post)
+0x2090E940 | (probably gold turnbuckles)
+-----------+--------------------------------------------------------------------
+[unused in US version???]
+0x20914900 | gold post
+0x20916D40 | blue full pad turnbuckle with Japanese writing
+0x2091CA00 | gold post
+0x2091EE40 | white full pad turnbuckle with Japanese writing
+0x20924B00 | gold post
+0x20926F40 | red full pad turnbuckle with Japanese writing
+0x2092CC00 | gold post, different
+0x2092F040 | white full pad turnbuckle with Japanese writing
+-----------+--------------------------------------------------------------------
+[BLADE?]
+0x20935100 | white post
+0x20937540 | blue "spirit" tall pads
+0x2093D200 | white post
+0x2093F640 | white "spirit" tall pads
+0x20945300 | white post
+0x20947740 | red "spirit" tall pads
+0x2094D400 | white post, different
+0x2094F840 | white "spirit" tall pads
+-----------+--------------------------------------------------------------------
+[unused in US version???]
+0x20955900 | blue post
+0x20957D40 | blue "SPIKE" (Japanese) tall pads
+0x2095DA00 | white post
+0x2095FE40 | white "SPIKE" (Japanese) tall pads
+0x20965B00 | red post
+0x20967F40 | red "SPIKE" (Japanese) tall pads
+0x2096DC00 | white post, different
+0x20970040 | white "SPIKE" (Japanese) tall pads
+-----------+--------------------------------------------------------------------
+0x20976100 | blue post
+0x20978540 | blue full pad turnbuckle
 0x2097E200 | 
 0x20980640 | 
 0x20986300 | 
