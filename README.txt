@@ -54,7 +54,8 @@ legend:
 ~ internal thing
 
 v0.0.3 - (in development)
-+ Very early version of GIF to VPF0 converter (only supports non-transparent files)
++ GIF to VPF0 converter.
++ Now supports writing back alpha values other than 0x7F.
 ~ Progress on 4bpp VPF0 image support (not enabled yet)
 
 v0.0.2a - 2016/10/23
