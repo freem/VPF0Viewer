@@ -11,7 +11,6 @@ FPR.ROM file, as well as export the images to PNG.
 This version is WIP for various reasons, including, but not limited to:
 * not knowing what all the bytes of the VPF0 format do
 * not having a good way to extract VPF0 files from FPR.ROM
-* certain images have odd colors; this is especially notable in 8bpp images.
 
 ================================================================================
 Usage
@@ -59,7 +58,7 @@ v0.0.3 - (in development)
 ~ Progress on 4bpp VPF0 image support (not enabled yet)
 
 v0.0.2a - 2016/10/23
-! Fixed palette bug with 8pp images. I should've known; the logos are the same.
+! Fixed palette bug with 8bpp images. I should've known; the logos are the same.
 
 v0.0.2 - 2016/10/23
 ! Fixed bug when trying to save a PNG without loading a file.
