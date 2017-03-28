@@ -215,7 +215,7 @@ namespace VPF0toPNG
 						Color tempColor = gifBitmap.GetPixel(x,y);
 						int colorIndex = 0;
 						foreach (System.Windows.Media.Color c in inputSource.Palette.Colors) {
-							if (tempColor.R == c.R && tempColor.G == c.G && tempColor.B == c.B) {
+							if (tempColor.R == c.R && tempColor.G == c.G && tempColor.B == c.B && tempColor.A == c.A) {
 								break;
 							}
 							colorIndex++;
@@ -250,7 +250,17 @@ namespace VPF0toPNG
 				_bw.Write((byte)temp.R); // red
 				_bw.Write((byte)temp.G); // green
 				_bw.Write((byte)temp.B); // blue
-				_bw.Write((byte)0x7F); // xxx: alpha is hardcoded
+
+				// convert alpha
+				if (temp.A == 0xFF) {
+					_bw.Write((byte)0x7F);
+				}
+				else if (temp.A == 0) {
+					_bw.Write((byte)0);
+				}
+				else {
+					_bw.Write((byte)((temp.A/2)-1));
+				}
 			}
 		}
 	}
